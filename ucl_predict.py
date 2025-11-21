@@ -269,7 +269,7 @@ def run_predictions():
     # Output
     final_df = pd.DataFrame(results).sort_values('Date')
     print("\n--- CHAMPIONS LEAGUE PREDICTIONS FOR THE NEXT 2 MATCHDAYS ---")
-    print(final_df.head(36).to_string(index=False))
+    print(final_df.head(18).to_string(index=False))
     
     save_path = os.path.join(OUTPUT_FOLDER, 'cl_predictions.csv')
     final_df.to_csv(save_path, index=False)
